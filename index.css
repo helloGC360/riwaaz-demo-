@@ -1,0 +1,243 @@
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1800&auto=format&fit=crop') center/ cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-family: 'Cinzel', serif;
+}
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    background: #d4af37;
+    color: black;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: 0.4s;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.4);
+}
+
+.outline {
+    background: transparent;
+    border: 2px solid #d4af37;
+    color: white;
+}
+
+.features {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-family: 'Cinzel', serif;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    transition: 0.4s;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border: 1px solid #d4af37;
+}
+
+.gallery-section {
+    width: 100vw;
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-size: 1cm;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    gap: 20px;
+}
+
+.gallery img {
+    max-width: 300px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.stats {
+    padding: 100px 10%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #6d071a;
+    color: white;
+}
+
+.stat-box h2 {
+    font-size: 60px;
+    color: #d4af37;
+}
+
+.testimonial {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.testimonial-box {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.socials span {
+    margin: 10px;
+    color: #d4af37;
+}
+
+.page-banner {
+    height: 50vh;
+    background: #6d071a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    font-family: 'Cinzel', serif;
+}
+
+.content-section,
+.contact-section,
+.services-grid {
+    padding: 100px 10%;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+textarea {
+    height: 150px;
+}
+
+@media(max-width:720px) {
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+
+}
+
+.socials a {
+    text-decoration: none;
+}
+
+.instaIcon {
+    color: #ab2563;
+}
+
+.facebookIcon {
+    color: #3b5998;
+}
+
+.linkedinIcon {
+    color: #0077B5;
+}

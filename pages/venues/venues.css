@@ -1,0 +1,309 @@
+
+        /* HERO */
+
+        .hero {
+
+            height: 100vh;
+
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.55),
+                    rgba(0, 0, 0, 0.55)),
+
+                url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1800&auto=format&fit=crop');
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+        }
+
+        .hero-content {
+
+            color: white;
+
+            max-width: 850px;
+
+            animation: fadeUp 1.5s ease;
+        }
+
+        .hero-content h1 {
+
+            font-size: 80px;
+
+            margin-bottom: 25px;
+
+            font-family: 'Cinzel', serif;
+        }
+
+        .hero-content p {
+
+            font-size: 22px;
+
+            line-height: 1.8;
+
+            margin-bottom: 35px;
+        }
+
+
+
+        /* BUTTON */
+
+        button {
+
+            padding: 15px 35px;
+
+            border: none;
+
+            border-radius: 50px;
+
+            background: #d4af37;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: 0.4s;
+        }
+
+        button:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.4);
+        }
+
+
+
+        /* VENUES */
+
+        .venues-section {
+
+            padding: 120px 10%;
+        }
+
+        .venues-section h2 {
+
+            text-align: center;
+
+            font-size: 55px;
+
+            margin-bottom: 70px;
+
+            color: #6d071a;
+
+            font-family: 'Cinzel', serif;
+        }
+
+        .venues-grid {
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+        }
+
+
+
+        /* VENUE CARD */
+
+        .venue-card {
+            max-width: 330px;
+            background: white;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: 0.5s;
+        }
+
+        .venue-card:hover {
+
+            transform:
+                translateY(-15px) scale(1.02);
+        }
+
+
+
+        /* IMAGE */
+
+        .venue-image {
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+        .venue-image img {
+
+            width: 100%;
+
+            height: 280px;
+
+            object-fit: cover;
+
+            transition: 0.6s;
+        }
+
+        .venue-card:hover img {
+
+            transform: scale(1.1);
+        }
+
+
+
+        /* OVERLAY */
+
+        .venue-overlay {
+
+            position: absolute;
+
+            width: 100%;
+            height: 100%;
+
+            top: 0;
+            left: 0;
+
+            background: rgba(0, 0, 0, 0.5);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            opacity: 0;
+
+            transition: 0.5s;
+        }
+
+        /* .venue-card:hover .venue-overlay {
+
+            opacity: 1;
+        } */
+
+
+
+        /* CONTENT */
+
+        .venue-content {
+
+            padding: 35px;
+        }
+
+        .venue-content h3 {
+
+            font-size: 32px;
+
+            margin-bottom: 15px;
+
+            color: #6d071a;
+
+            font-family: 'Cinzel', serif;
+        }
+
+        .venue-content p {
+
+            line-height: 1.8;
+
+            margin-bottom: 25px;
+        }
+
+
+
+        /* INFO */
+
+        .venue-info {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            color: #777;
+
+            font-size: 15px;
+        }
+
+
+
+        /* EXPERIENCE */
+
+        .experience-section {
+
+            padding: 140px 10%;
+
+            background: #6d071a;
+
+            color: white;
+
+            text-align: center;
+        }
+
+        .experience-content {
+
+            max-width: 900px;
+
+            margin: auto;
+        }
+
+        .experience-content h2 {
+
+            font-size: 60px;
+
+            margin-bottom: 30px;
+
+            font-family: 'Cinzel', serif;
+        }
+
+        .experience-content p {
+
+            font-size: 20px;
+
+            line-height: 2;
+
+            margin-bottom: 40px;
+        }
+
+
+
+        /* ANIMATION */
+
+        @keyframes fadeUp {
+
+            from {
+
+                opacity: 0;
+
+                transform: translateY(60px);
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform: translateY(0);
+            }
+
+        }
+
+
+
+        /* MOBILE */
+
+        @media(max-width:768px) {
+
+            .hero-content h1 {
+                font-size: 50px;
+            }
+
+            .venues-section h2 {
+                font-size: 40px;
+            }
+
+            .experience-content h2 {
+                font-size: 40px;
+            }
+
+        }
