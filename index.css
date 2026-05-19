@@ -163,6 +163,10 @@ button:hover {
     color: white;
 }
 
+.counter , .ct{
+    display: inline;
+}
+
 @media(max-width:768px){
     .stats{
         flex-direction:column;
